@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mercado Esclavo</string>
+
+
+    <string name="NombreAtributo">Nombre del atributo</string>
+    <string name="DetalleAtributo">Detalle del atributo</string>
+    <string name="facebook_app_id">466870140622359</string>
+    <string name="fb_login_protocol_scheme">fb711374606035243</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

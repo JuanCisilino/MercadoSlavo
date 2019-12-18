@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/redmarket"
+    android:alpha="1"
+    android:id="@+id/FragmentUsuarioNuevo_FrameLayout"
+    tools:context=".view.UsuarioNuevo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/FragmentUsuarioNuevo_imageview_Imagen">
+        </ImageView>
+    </LinearLayout>
+    <EditText
+        android:hint="Nombre"
+        android:id="@+id/FragmentUsuarioNuevo_editText_nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTexto"
+        android:textColorHint="@color/colorTexto">
+
+    </EditText>
+
+    <EditText
+        android:hint="Apellido"
+        android:id="@+id/FragmentUsuarioNuevo_editText_apellidoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTexto"
+        android:textColorHint="@color/colorTexto">
+
+    </EditText>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="520sp">
+
+        <Button
+            android:id="@+id/FragmentUsuarioNuevo_botonGuardarCambios"
+            android:text="Guardar Cambios"
+            android:textColor="@color/colorTexto"
+            android:background="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            android:padding="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="450sp">
+
+            <Button
+                android:id="@+id/FragmentUsuarioNuevo_Button_botonCargarImagen"
+                android:text="Cargar Imagen"
+                android:textColor="@color/colorTexto"
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+</FrameLayout>

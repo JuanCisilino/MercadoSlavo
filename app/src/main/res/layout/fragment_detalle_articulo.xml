@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:alpha="1"
+    android:orientation="vertical"
+    android:id="@+id/fragment_detalle_RelativeLayout"
+    tools:context=".view.FragmentDetalleArticulo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragment_detalle_cardviewRecyclerImagen"
+            android:layout_width="230dp"
+            android:layout_height="290dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:contentPadding="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_detalle_imagen_celda_articulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitCenter" />
+
+        </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fragment_detalle_floatingFav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/fragment_detalle_cardviewRecyclerImagen"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/ic_favorite_black_24dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fragment_detalle_floatingShare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/fragment_detalle_cardviewRecyclerImagen"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="180dp"
+                android:src="@drawable/ic_location_on_black_24dp"/>
+
+
+        <TextView
+            android:id="@+id/fragment_detalle_textview_nombre_articulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/fragment_detalle_cardviewRecyclerImagen"
+            android:gravity="center_horizontal"
+            android:text="Nombre de Articulo"
+            android:textColor="@color/colorTexto"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/fragment_detalle_textView_precio_articulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/fragment_detalle_textview_nombre_articulo"
+            android:text="Precio"
+            android:textColor="@color/colorTexto"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/fragment_detalle_textView_condicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_detalle_textView_precio_articulo"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Condicion"
+            android:textColor="@color/colorTexto"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragment_detalle_cardview_RecyclerAtributos"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:layout_below="@+id/fragment_detalle_textView_condicion"
+                android:layout_marginTop="15dp"
+                app:contentPadding="5dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                app:cardPreventCornerOverlap="false">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_detalle_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragment_detalle_cardview_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_detalle_cardview_RecyclerAtributos"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:contentPadding="5dp">
+
+            <TextView
+                android:id="@+id/fragment_detalle_textView_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorTexto"
+                android:text="Descripcion"
+                android:textSize="15dp" />
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

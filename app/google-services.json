@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "436492069388",
+    "firebase_url": "https://ejerciciointegradormercadoescl.firebaseio.com",
+    "project_id": "ejerciciointegradormercadoescl",
+    "storage_bucket": "ejerciciointegradormercadoescl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436492069388:android:058e3a6d308fd142685c29",
+        "android_client_info": {
+          "package_name": "com.example.ejerciciointegradormercadoesclavo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436492069388-9inhdri8t5r9lje908tb1aeehps3jdfq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ejerciciointegradormercadoesclavo",
+            "certificate_hash": "5bea67f83032b97f1b3ce5089dc1423c9303a9c5"
+          }
+        },
+        {
+          "client_id": "436492069388-mgjdhvh0u8rb83ceip284jchl5osl79r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWNYd7jW7hK9HGtTEcGskkejp8u1_5baE"
+        },
+        {
+          "current_key": "AIzaSyDKNmmX21VXnxIuIDBpcC1d-bFLAQAeQkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436492069388-mgjdhvh0u8rb83ceip284jchl5osl79r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436492069388:android:520bf0478b457e11685c29",
+        "android_client_info": {
+          "package_name": "com.example.ejerciciointegradormercadoesclavo.view"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436492069388-davp9jqo44leul77j8vg3bgrch8hm5oe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ejerciciointegradormercadoesclavo.view",
+            "certificate_hash": "5bea67f83032b97f1b3ce5089dc1423c9303a9c5"
+          }
+        },
+        {
+          "client_id": "436492069388-mgjdhvh0u8rb83ceip284jchl5osl79r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWNYd7jW7hK9HGtTEcGskkejp8u1_5baE"
+        },
+        {
+          "current_key": "AIzaSyDKNmmX21VXnxIuIDBpcC1d-bFLAQAeQkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436492069388-mgjdhvh0u8rb83ceip284jchl5osl79r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

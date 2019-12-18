@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/redmarket"
+    android:alpha="1"
+    android:id="@+id/fragmentFavoritos_FrameLayout"
+    tools:context=".view.FragmentFavoritos">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esta es tu seleccion de Articulos Favoritos"
+        android:textSize="25sp"
+        android:textColor="@color/colorTexto"
+        android:gravity="center_horizontal"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragmentFavoritos_cardview_Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_marginTop="70dp"
+        app:contentPadding="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragmentFavoritos_Recycler_Lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>

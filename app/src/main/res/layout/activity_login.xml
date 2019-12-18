@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/redmarket"
+    android:id="@+id/ActivityLogin_Layout"
+    tools:context=".view.ActivityLogin">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp"
+        android:padding="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80sp">
+
+    <EditText
+        android:id="@+id/loginActivity_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorTexto"
+        android:textColorHint="@color/colorTexto"
+        android:hint="Ingrese su Email" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp"
+        android:padding="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160sp">
+
+    <EditText
+        android:id="@+id/loginActivity_password"
+        android:layout_below="@+id/nombre"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTexto"
+        android:textColorHint="@color/colorTexto"
+        android:inputType="textPassword"
+        android:hint="Pass Aqui!!"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/loginActivity_imageview_ingreso"
+        android:layout_width="133dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        android:padding="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="370sp">
+
+    <Button
+        android:id="@+id/loginActivity_login"
+        android:text="LOGIN"
+        android:textColor="@color/colorTexto"
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="450sp">
+
+    <Button
+        android:id="@+id/loginActivity_register"
+        android:text="REGISTER"
+        android:textColor="@color/colorTexto"
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        app:cardCornerRadius="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="520dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loginActivity_contenedorDeFragmentUsuario">
+    </FrameLayout>
+
+</FrameLayout>

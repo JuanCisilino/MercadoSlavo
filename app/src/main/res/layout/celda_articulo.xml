@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/celdaArticulo_ProgressBar"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:id="@+id/imagen_celda_articulo"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="100dp"
+                android:background="#7A7C81BB"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_nombre_articulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorTexto"
+                android:textStyle="bold"
+                android:text="Nombre del Articulo"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/textView_precio_articulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTexto"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="precio"
+                android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/textView_condicion_articulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTexto"
+                    android:gravity="center_horizontal"
+                    android:textStyle="italic"
+                    android:text="Condicion"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

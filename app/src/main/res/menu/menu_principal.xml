@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home"
+    android:id="@+id/menuPrincipal_home"></item>
+    <item android:title="Favoritos"
+        android:id="@+id/menuPrincipal_favoritos"></item>
+    <item android:title="Perfil"
+        android:id="@+id/menuPrincipal_perfil"></item>
+    <item android:title="About us"
+        android:id="@+id/menuPrincipal_aboutus"></item>
+    <item android:title="Cerrar Cesion"
+        android:id="@+id/menuPrincipal_logout"></item>
+</menu>

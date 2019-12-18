@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/celdaAtributos_Textview_NombreAtributo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:text="@string/NombreAtributo"/>
+        <TextView
+            android:id="@+id/celdaAtributos_Textview_DetalleAtributo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorTexto"
+            android:textSize="8dp"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/DetalleAtributo"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</GridLayout>

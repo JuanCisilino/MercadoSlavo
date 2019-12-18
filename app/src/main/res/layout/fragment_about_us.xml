@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#B9B9B9"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:id="@+id/fragment_About_us"
+    tools:context=".view.FragmentAboutUs">
+
+    <TextView
+        android:id="@+id/fragmentaboutus_textview_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About us"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/fragmentaboutus_textview_contenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historia y mision de la compania"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>
